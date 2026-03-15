@@ -35,18 +35,18 @@ function HeroSection() {
             Codes QR, cartes digitales, défis et récompenses.
           </span>
         </p>
-        <div className="mt-8 flex justify-between gap-4 max-w-md">
-          <div className="flex flex-col text-center p-3 min-w-[100px]">
-            <p className="text-green-600 font-bold text-xl">500K+</p>
-            <p className="text-xs text-gray-500 mt-0.5">Interactions/mois</p>
+        <div className="mt-6 md:mt-8 flex justify-between gap-2 md:gap-4 max-w-md">
+          <div className="flex flex-col text-center p-2 md:p-3 min-w-[70px] md:min-w-[100px]">
+            <p className="text-green-600 font-bold text-lg md:text-xl">500K+</p>
+            <p className="text-[10px] md:text-xs text-gray-500 mt-0.5">Interactions/mois</p>
           </div>
-          <div className="flex flex-col text-center p-3 min-w-[100px]">
-            <p className="text-red-600 font-bold text-xl">50+</p>
-            <p className="text-xs text-gray-500 mt-0.5">Marques actives</p>
+          <div className="flex flex-col text-center p-2 md:p-3 min-w-[70px] md:min-w-[100px]">
+            <p className="text-red-600 font-bold text-lg md:text-xl">50+</p>
+            <p className="text-[10px] md:text-xs text-gray-500 mt-0.5">Marques actives</p>
           </div>
-          <div className="flex flex-col text-center p-3 min-w-[100px]">
-            <p className="text-green-600 font-bold text-xl">x3.5</p>
-            <p className="text-xs text-gray-500 mt-0.5">ROI moyen</p>
+          <div className="flex flex-col text-center p-2 md:p-3 min-w-[70px] md:min-w-[100px]">
+            <p className="text-green-600 font-bold text-lg md:text-xl">x3.5</p>
+            <p className="text-[10px] md:text-xs text-gray-500 mt-0.5">ROI moyen</p>
           </div>
         </div>
         <div className="flex flex-wrap gap-4 mt-8">
@@ -81,9 +81,9 @@ function HeroSection() {
             Comment ça marche
           </button>
         </div>
-        <div className="mt-32">
+        <div className="mt-16 md:mt-32">
           <p className="trust-title">ILS NOUS FONT CONFIANCE</p>
-          <div className="flex gap-4 trust-names text-gray-700">
+          <div className="flex flex-wrap gap-3 md:gap-4 trust-names text-gray-700">
             <p>Maroc Telecom</p>
             <p>Inwi</p>
             <p>Orange</p>
@@ -92,30 +92,30 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="relative mt-8 md:mt-0 w-full md:w-1/2 flex flex-col items-center justify-center album-frame rounded-3xl bg-white/50 min-h-[280px]">
-        <div className="flex items-center absolute -top-8 -right-16 z-50 rounded-xl bg-white p-4 shadow-lg border border-gray-100 max-w-[300px] h-20 gap-4">
-          <div className="rounded-lg bg-[#DCFCE7] w-12 h-12 flex items-center justify-center shrink-0">
+      <div className="relative mt-8 md:mt-0 w-full md:w-1/2 flex flex-col items-center justify-center album-frame rounded-2xl md:rounded-3xl bg-white/50 min-h-[240px] md:min-h-[280px]">
+        <div className="flex items-center absolute -top-3 -right-3 md:-top-8 md:-right-16 z-50 rounded-lg md:rounded-xl bg-white p-2 md:p-4 shadow-lg border border-gray-100 max-w-[180px] md:max-w-[300px] h-14 md:h-20 gap-2 md:gap-4">
+          <div className="rounded-lg bg-[#DCFCE7] w-8 h-8 md:w-12 md:h-12 flex items-center justify-center shrink-0">
             <svg
-              className="w-7 h-7 text-green-700"
+              className="w-4 h-4 md:w-7 md:h-7 text-green-700"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
               <path d="M3 3h6v6H3V3zm2 2v2h2V5H5zm8-2h6v6h-6V3zm2 2v2h2V5h-2zM3 15h6v6H3v-6zm2 2v2h2v-2H5zm8-2h6v6h-6v-6zm2 2v2h2v-2h-2z" />
             </svg>
           </div>
-          <div>
-            <h2 className="font-semibold text-[#0F172A] text-sm">Scan QR Code</h2>
-            <p className="text-[#64748B] text-xs mt-0.5">Débloquer une carte</p>
+          <div className="min-w-0">
+            <h2 className="font-semibold text-[#0F172A] text-xs md:text-sm">Scan QR Code</h2>
+            <p className="text-[#64748B] text-[10px] md:text-xs mt-0.5">Débloquer une carte</p>
           </div>
         </div>
 
         <div className="album-mockup-header w-full">
-          <div className="ml-6 pt-4 space-y-6">
-            <div className="space-y-2">
+          <div className="ml-3 md:ml-6 pt-2 md:pt-4 space-y-3 md:space-y-6">
+            <div className="space-y-1 md:space-y-2">
               <p className="text-2xs font-medium">ALBUM DIGITAL 2025</p>
-              <p className="font-bold">Ma Collection</p>
+              <p className="font-bold text-sm md:text-base">Ma Collection</p>
             </div>
-            <div className="flex space-x-4">
+            <div className="flex space-x-2 md:space-x-4">
               <div className="flex flex-col">
                 <h2 className="font-bold">127</h2>
                 <span>Cartes</span>
@@ -131,34 +131,34 @@ function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 p-4 flex-1">
+        <div className="grid grid-cols-3 gap-2 md:gap-4 p-2 md:p-4 flex-1 w-full max-w-full justify-items-center">
           {[...Array(6)].map((_, i) => (
             <div
               key={i}
-              className="card-placeholder rounded-lg w-[128px] h-[170.66px]"
+              className="card-placeholder rounded-lg w-[72px] h-[96px] md:w-[128px] md:h-[170.66px]"
             />
           ))}
         </div>
 
-        <nav className="album-mockup-nav relative flex items-center justify-around w-full py-3 px-4 border-t border-gray-200 bg-white/80 shadow-[0_-1px_3px_rgba(0,0,0,0.06)]">
-          <div className="flex flex-col items-center gap-1.5">
-            <div className="card-placeholder rounded-lg w-10 h-10" />
-            <span className="text-xs text-gray-600">Scanner</span>
+        <nav className="album-mockup-nav relative flex items-center justify-around w-full py-2 md:py-3 px-3 md:px-4 border-t border-gray-200 bg-white/80 shadow-[0_-1px_3px_rgba(0,0,0,0.06)]">
+          <div className="flex flex-col items-center gap-1 md:gap-1.5">
+            <div className="card-placeholder rounded-lg w-8 h-8 md:w-10 md:h-10" />
+            <span className="text-[10px] md:text-xs text-gray-600">Scanner</span>
           </div>
-          <div className="flex flex-col items-center gap-1.5">
-            <div className="card-placeholder rounded-lg w-10 h-10" />
-            <span className="text-xs text-gray-600">Échanges</span>
+          <div className="flex flex-col items-center gap-1 md:gap-1.5">
+            <div className="card-placeholder rounded-lg w-8 h-8 md:w-10 md:h-10" />
+            <span className="text-[10px] md:text-xs text-gray-600">Échanges</span>
           </div>
-          <div className="flex flex-col items-center gap-1.5">
-            <div className="card-placeholder rounded-lg w-10 h-10" />
-            <span className="text-xs text-gray-600">Profil</span>
+          <div className="flex flex-col items-center gap-1 md:gap-1.5">
+            <div className="card-placeholder rounded-lg w-8 h-8 md:w-10 md:h-10" />
+            <span className="text-[10px] md:text-xs text-gray-600">Profil</span>
           </div>
         </nav>
 
-        <div className="absolute -bottom-10 -left-40 z-50 flex items-center rounded-xl bg-white p-4 shadow-lg border border-gray-100 max-w-[280px] gap-4">
-          <div className="rounded-lg bg-red-100 w-10 h-10 flex items-center justify-center shrink-0">
+        <div className="absolute -bottom-3 -left-3 md:-bottom-10 md:-left-40 z-50 flex items-center rounded-lg md:rounded-xl bg-white p-2 md:p-4 shadow-lg border border-gray-100 max-w-[160px] md:max-w-[280px] h-14 md:h-auto gap-2 md:gap-4">
+          <div className="rounded-lg bg-red-100 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center shrink-0">
             <svg
-              className="w-5 h-5 text-red-600"
+              className="w-4 h-4 md:w-5 md:h-5 text-red-600"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -173,9 +173,9 @@ function HeroSection() {
               <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
             </svg>
           </div>
-          <div>
-            <h2 className="font-semibold text-[#0F172A] text-sm">Récompense</h2>
-            <p className="text-[#64748B] text-xs mt-0.5">Tirage hebdomadaire</p>
+          <div className="min-w-0">
+            <h2 className="font-semibold text-[#0F172A] text-xs md:text-sm">Récompense</h2>
+            <p className="text-[#64748B] text-[10px] md:text-xs mt-0.5">Tirage hebdomadaire</p>
           </div>
         </div>
       </div>

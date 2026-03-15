@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface MenuItem {
   label: string;
   href: string;
@@ -11,10 +13,14 @@ const menuItems: MenuItem[] = [
 ];
 
 function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <nav className="w-full h-16 bg-white/95 backdrop-blur border-b border-gray-100 sticky top-0 z-10 shadow-sm" aria-label="Navigation principale">
-      <div className="max-w-6xl mx-auto h-full px-4 md:px-8 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+    <nav className="w-full bg-white/95 backdrop-blur border-b border-gray-100 sticky top-0 z-10 shadow-sm" aria-label="Navigation principale">
+      <div className="max-w-6xl mx-auto h-16 px-4 md:px-8 flex items-center justify-between">
+        <a href="#album" className="flex items-center gap-2 shrink-0" onClick={closeMenu}>
           <div className="rounded-lg bg-[var(--primary-green)] p-1.5 text-white">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden>
               <path
@@ -28,8 +34,10 @@ function NavBar() {
             <span className="font-bold text-gray-800 text-xl">win</span>
           </span>
           <p className="text-green-600 text-sm rounded-lg bg-green-100 px-2">GAMES</p>
-        </div>
-        <div className="flex items-center gap-6 md:gap-8">
+        </a>
+
+        {/* Desktop: liens + CTA en ligne */}
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {menuItems.map((m) => (
             <a
               key={m.href}
@@ -40,8 +48,52 @@ function NavBar() {
             </a>
           ))}
           <button className="btn-primary group" aria-label="Demander une démo">
-            Demander
-            une démo <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&gt;</span>
+            Demander une démo <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&gt;</span>
+          </button>
+        </div>
+
+        {/* Mobile: bouton hamburger */}
+        <button
+          type="button"
+          className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition"
+          aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      {/* Mobile: panneau menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-200 ease-out ${menuOpen ? "max-h-[320px] opacity-100" : "max-h-0 opacity-0"}`}
+        aria-hidden={!menuOpen}
+      >
+        <div className="border-t border-gray-100 bg-white px-4 py-4 flex flex-col gap-2">
+          {menuItems.map((m) => (
+            <a
+              key={m.href}
+              href={m.href}
+              className="py-3 px-3 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-lg transition font-medium text-sm"
+              onClick={closeMenu}
+            >
+              {m.label}
+            </a>
+          ))}
+          <button
+            className="btn-primary group mt-2 w-full justify-center"
+            aria-label="Demander une démo"
+            onClick={closeMenu}
+          >
+            Demander une démo <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&gt;</span>
           </button>
         </div>
       </div>
