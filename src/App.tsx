@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Footer from './components/Footer.tsx'
+import NavBar from './components/Navbar.tsx'
+import HeroSection from './views/HeroSection.tsx'
+import SolutionSection from './views/SolutionSection.tsx'
+import ParcoursClientSection from './views/ParcoursClientSection.tsx'
+import TransformationSection from './views/TransformationSection.tsx'
+import GestionSection from './views/GestionSection.tsx'
+import CapacitesSection from './views/CapacitesSection.tsx'
+import FormulesSection from './views/FormulesSection.tsx'
+import CatalogueSection from './views/CatalogueSection.tsx'
+import KpisSection from './views/KpisSection.tsx'
+import CtaSection from './views/CtaSection.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <a href="#album" className="skip-link">
+        Aller au contenu
+      </a>
+      <NavBar />
+      <main id="main-content" role="main">
+        <HeroSection />
+        <SolutionSection />
+        <ParcoursClientSection />
+        <TransformationSection />
+        <GestionSection />
+        <CapacitesSection />
+        <FormulesSection />
+        <CatalogueSection />
+        <KpisSection />
+        <CtaSection />
+      </main>
+      <Footer />
     </>
   )
 }
