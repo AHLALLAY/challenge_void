@@ -643,7 +643,7 @@
   .section-cta__buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 1rem;
     flex-wrap: wrap;
   }
@@ -660,6 +660,7 @@
     font-family: inherit;
     border-radius: 0.5rem;
     cursor: pointer;
+    min-height: 3rem;
     transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
   }
 
@@ -738,6 +739,15 @@
     }
     .section-cta {
       padding: 2rem 1.5rem;
+    }
+    .section-cta__buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+    .section-cta__buttons .btn-cta-primary,
+    .section-cta__buttons .btn-cta-secondary {
+      width: 100%;
+      min-width: 0;
     }
   }
   
