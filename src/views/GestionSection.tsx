@@ -1,4 +1,4 @@
-const iconProps = { width: 28, height: 28, viewBox: "0 0 18 18", fill: "none" as const, xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true };
+const iconProps = { width: 20, height: 20, viewBox: "0 0 18 18", fill: "none" as const, xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true };
 
 const CardIcons = {
   qr: (
@@ -81,10 +81,10 @@ function GestionSection() {
             key={i}
             className="p-4 bg-white rounded-xl border border-gray-100 shadow-sm card-hover hover:shadow-md transition text-left"
           >
-            <div className="flex items-center justify-center w-14 h-14 text-green-600 shrink-0 bg-[#f0fdf4] rounded-xl p-3">
+            <div className="flex items-center justify-center w-10 h-10 text-green-600 shrink-0 bg-[#f0fdf4] rounded-lg p-1">
               {CardIcons[card.icon]}
             </div>
-            <h3 className="font-bold text-gray-900 mt-2">{card.title}</h3>
+            <h3 className="font-semibold text-gray-900 mt-2 text-base">{card.title}</h3>
             <p className="text-sm text-gray-600 mt-0.5">{card.desc}</p>
           </div>
         ))}

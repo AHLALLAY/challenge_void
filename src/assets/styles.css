@@ -209,9 +209,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
     background: rgba(22, 163, 74, 0.12);
     color: var(--primary-green);
     margin-bottom: 0.75rem;
@@ -324,7 +325,9 @@
     justify-content: center;
     width: 2.5rem;
     height: 2.5rem;
+    padding: 0.25rem;
     margin-bottom: 1rem;
+    border-radius: 0.5rem;
   }
 
   .pricing-card__icon svg {
@@ -586,20 +589,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.25rem;
+    margin-bottom: 0.75rem;
     color: var(--primary-green);
   }
 
   .kpi-item__icon svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .kpi-item__value {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.375rem;
+    font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 0.25rem;
     line-height: 1.2;

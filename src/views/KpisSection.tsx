@@ -59,11 +59,12 @@ function KpisSection() {
         <div key={i} className="kpi-item">
           <span className="kpi-item__icon">
             <svg
-              width="27"
-              height="16"
-              viewBox="0 0 27 16"
+              width="24"
+              height="24"
+              viewBox="0 0 30 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden={true}
             >
               {kpi.icon}
             </svg>

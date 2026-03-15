@@ -14,10 +14,10 @@ function TransformationSection() {
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-4 mt-8 max-w-5xl mx-auto">
         <div className="flex flex-col justify-center items-center bg-white/10 rounded-lg p-4 w-full md:w-[240px] h-[228px]">
-          <div className="bg-white/20 w-20 h-20 flex items-center justify-center rounded-lg shrink-0">
+          <div className="bg-white/20 w-10 h-10 flex items-center justify-center rounded-lg shrink-0 p-1">
             <svg
-              width="24"
-              height="27"
+              width="20"
+              height="20"
               viewBox="0 0 24 27"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +37,10 @@ function TransformationSection() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center bg-white/10 rounded-lg p-4 w-full md:w-[240px] h-[228px]">
-          <div className="bg-white/20 w-20 h-20 flex items-center justify-center rounded-lg shrink-0">
+          <div className="bg-white/20 w-10 h-10 flex items-center justify-center rounded-lg shrink-0 p-1">
             <svg
-              width="27"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 27 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -60,10 +60,10 @@ function TransformationSection() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center bg-white/10 rounded-lg p-4 w-full md:w-[240px] h-[228px]">
-          <div className="bg-white/20 w-20 h-20 flex items-center justify-center rounded-lg shrink-0">
+          <div className="bg-white/20 w-10 h-10 flex items-center justify-center rounded-lg shrink-0 p-1">
             <svg
-              width="27"
-              height="27"
+              width="20"
+              height="20"
               viewBox="0 0 27 27"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

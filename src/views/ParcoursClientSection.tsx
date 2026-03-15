@@ -1,4 +1,4 @@
-const svgProps = { width: 40, height: 40, viewBox: "0 0 24 24", fill: "none" as const, xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true };
+const svgProps = { width: 20, height: 20, viewBox: "0 0 24 24", fill: "none" as const, xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true };
 const stroke = "currentColor";
 const strokeWidth = "1";
 const strokeLine = "round";
@@ -64,7 +64,7 @@ function ParcoursClientSection() {
             >
               {step.num}
             </div>
-              <div className={`flex items-center justify-center h-12 w-12 rounded-xl border ${step.iconBorder} ${step.iconBg} ${step.iconShadow} transition-shadow hover:shadow-md`}>
+              <div className={`flex items-center justify-center w-10 h-10 rounded-lg border p-1 ${step.iconBorder} ${step.iconBg} ${step.iconShadow} transition-shadow hover:shadow-md`}>
                 {StepIcons[step.icon]}
               </div>
             <h3 className="font-bold text-gray-900 mt-2">{step.title}</h3>

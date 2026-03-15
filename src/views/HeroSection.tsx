@@ -94,9 +94,9 @@ function HeroSection() {
 
       <div className="relative mt-8 md:mt-0 w-full md:w-1/2 flex flex-col items-center justify-center album-frame rounded-2xl md:rounded-3xl bg-white/50 min-h-[240px] md:min-h-[280px]">
         <div className="flex items-center absolute -top-3 -right-3 md:-top-8 md:-right-16 z-50 rounded-lg md:rounded-xl bg-white p-2 md:p-4 shadow-lg border border-gray-100 max-w-[180px] md:max-w-[300px] h-14 md:h-20 gap-2 md:gap-4">
-          <div className="rounded-lg bg-[#DCFCE7] w-8 h-8 md:w-12 md:h-12 flex items-center justify-center shrink-0">
+          <div className="rounded-lg bg-[#DCFCE7] w-10 h-10 flex items-center justify-center shrink-0 p-1">
             <svg
-              className="w-4 h-4 md:w-7 md:h-7 text-green-700"
+              className="w-4 h-4 md:w-5 md:h-5 text-green-700"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -156,7 +156,7 @@ function HeroSection() {
         </nav>
 
         <div className="absolute -bottom-3 -left-3 md:-bottom-10 md:-left-40 z-50 flex items-center rounded-lg md:rounded-xl bg-white p-2 md:p-4 shadow-lg border border-gray-100 max-w-[160px] md:max-w-[280px] h-14 md:h-auto gap-2 md:gap-4">
-          <div className="rounded-lg bg-red-100 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center shrink-0">
+          <div className="rounded-lg bg-red-100 w-10 h-10 flex items-center justify-center shrink-0 p-1">
             <svg
               className="w-4 h-4 md:w-5 md:h-5 text-red-600"
               viewBox="0 0 24 24"
