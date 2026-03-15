@@ -83,7 +83,7 @@ function Footer() {
           Un service de <span className="text-green-600">Agency.Africa</span> — games.agency.africa
         </p>
       </div>
-      <div className="mt-4 max-w-6xl mx-auto">
+      <div className="mt-4 max-w-6xl mx-auto flex justify-center">
         <span className="inline-flex items-center gap-2 rounded border border-green-500/50 bg-green-100 px-3 py-1 text-sm text-green-700">
           <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
             <path d="M5.83332 8.38016L7.49998 10.0468L10.8333 6.7135M15.515 3.36683C12.8801 3.50676 10.2973 2.59567 8.33332 0.833496C6.36937 2.59567 3.78656 3.50676 1.15165 3.36683C0.939594 4.18776 0.832627 5.03229 0.833316 5.88016C0.833316 10.5393 4.01998 14.4552 8.33332 15.5652C12.6466 14.4552 15.8333 10.5402 15.8333 5.88016C15.8333 5.01183 15.7225 4.17016 15.515 3.36683Z" stroke="#16A34A" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />

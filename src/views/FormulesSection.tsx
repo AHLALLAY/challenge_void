@@ -50,7 +50,7 @@ function FormulesSection() {
             <p className="pricing-card__name">Starter</p>
             <p className="pricing-card__tagline">Campagne locale</p>
             <p className="pricing-card__desc">Idéal pour tester sur un marché</p>
-            <p className="pricing-card__price">
+            <p className="pricing-card__price border-t border-b border-gray-300 py-2 my-2">
               Tarification sur mesure selon vos volumes
             </p>
             <ul className="pricing-card__features">
@@ -99,7 +99,7 @@ function FormulesSection() {
             <p className="pricing-card__name">Scale</p>
             <p className="pricing-card__tagline">Expansion nationale</p>
             <p className="pricing-card__desc">Pour des campagnes d&apos;envergure</p>
-            <p className="pricing-card__price">
+            <p className="pricing-card__price border-t border-b border-gray-300 py-2 my-2">
               Tarification sur mesure selon vos volumes
             </p>
             <ul className="pricing-card__features">
@@ -148,7 +148,7 @@ function FormulesSection() {
             <p className="pricing-card__name">Entreprise</p>
             <p className="pricing-card__tagline">Solution globale</p>
             <p className="pricing-card__desc">Pour les groupes internationaux</p>
-            <p className="pricing-card__price">
+            <p className="pricing-card__price border-t border-b border-gray-300 py-2 my-2">
               Tarification sur mesure selon vos volumes
             </p>
             <ul className="pricing-card__features">
